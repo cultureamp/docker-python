@@ -3,3 +3,6 @@ MAINTAINER Larry Liang <larry@cultureamp.com>
 
 RUN pip install troposphere \
                 pyyaml
+
+RUN mkdir -p /usr/src/app
+WORKDIR /usr/src/app
