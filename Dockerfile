@@ -2,7 +2,8 @@ FROM python:2.7.11-wheezy
 MAINTAINER Larry Liang <techops@cultureamp.com>
 
 RUN pip install troposphere \
-                pyyaml
+                pyyaml \
+                yapf
 
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
