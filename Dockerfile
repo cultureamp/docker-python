@@ -1,9 +1,11 @@
 FROM python:2.7.11-wheezy
-MAINTAINER Larry Liang <techops@cultureamp.com>
+MAINTAINER Cultureamp SRE Team <techops@cultureamp.com>
 
 RUN pip install troposphere \
                 pyyaml \
-                yapf
+                yapf \
+                flake8 \
+                autoflake
 
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
