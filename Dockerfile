@@ -5,7 +5,8 @@ RUN pip install troposphere \
                 pyyaml \
                 yapf \
                 flake8 \
-                autoflake
+                autoflake \
+                codeclimate-test-reporter
 
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
