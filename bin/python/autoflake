@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+set -eu
+
+autoflake  --in-place \
+    --remove-unused-variables \
+    --remove-all-unused-imports \
+    --recursive .

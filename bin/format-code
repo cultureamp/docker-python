@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+## Note: this script should be running from
+## the root of the repo
+set -eu
+
+script_dir=$(dirname "$0")
+
+echo '--- reformat code using yapf_reformat and autoflake'
+$script_dir/python/yapf_reformat --in-place --recursive .
+
+$script_dir/python/autoflake

@@ -1,5 +1,5 @@
 FROM python:2.7.11-wheezy
-MAINTAINER Cultureamp SRE Team <techops@cultureamp.com>
+MAINTAINER Cultureamp Infrastructure Services Team <is_team@cultureamp.com>
 
 RUN pip install troposphere \
                 pyyaml \
@@ -9,4 +9,7 @@ RUN pip install troposphere \
                 codeclimate-test-reporter
 
 RUN mkdir -p /usr/src/app
+
+ADD bin /usr/local/lib/camper
+
 WORKDIR /usr/src/app
