@@ -3,4 +3,8 @@
 ## the root of the repo
 set -eu
 
-$script_dir/pre-commit-python
+script_dir=$(dirname "$0")
+
+$script_dir/python/flake8_check
+
+$script_dir/python/unit_tests
