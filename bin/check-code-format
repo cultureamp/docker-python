@@ -5,6 +5,6 @@ set -eu
 
 script_dir=$(dirname "$0")
 
-echo '--- check code formatting, e.g. yapf_reformat, is run prior to commit' 
+echo '--- check code formatting, such as yapf, was run prior to commit' 
 
-$script_dir/python/yapf_reformat --diff --recursive .
+yapf --diff --recursive  .

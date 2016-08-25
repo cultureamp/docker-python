@@ -4,4 +4,5 @@
 set -eu
 
 echo "--- check python coding convention"
+
 flake8 .

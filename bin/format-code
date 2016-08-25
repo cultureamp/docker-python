@@ -5,7 +5,8 @@ set -eu
 
 script_dir=$(dirname "$0")
 
-echo '--- reformat code using yapf_reformat and autoflake'
-$script_dir/python/yapf_reformat --in-place --recursive .
+echo '--- reformat code using yapf and autoflake'
+
+yapf --in-place --recursive .
 
 $script_dir/python/autoflake
