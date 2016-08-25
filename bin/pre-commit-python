@@ -6,3 +6,5 @@ set -eu
 script_dir=$(dirname "$0")
 
 $script_dir/validate
+
+$script_dir/python-camper/format_code
