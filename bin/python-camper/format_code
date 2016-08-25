@@ -5,8 +5,8 @@ set -eu
 
 script_dir=$(dirname "$0")
 
-echo '--- reformat code using yapf and autoflake'
+echo '--- reformat code with yapf'
 
 yapf --in-place --recursive .
 
-$script_dir/python-camper/autoflake
+$script_dir/autoflake

@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -eu
 
-echo "--- remove unused imports and unused variables from Python code"
+echo "--- remove unused imports and unused variables with autoflake"
 
 autoflake  --in-place \
     --remove-unused-variables \
