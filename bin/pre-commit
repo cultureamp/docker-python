@@ -3,4 +3,6 @@
 ## the root of the repo
 set -eu
 
+script_dir=$(dirname "$0")
+
 $script_dir/pre-commit-python
