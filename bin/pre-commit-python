@@ -5,6 +5,6 @@ set -eu
 
 script_dir=$(dirname "$0")
 
-$script_dir/python/flake8_check
+$script_dir/python-camper/flake8_check
 
-$script_dir/python/unit_tests
+$script_dir/python-camper/unit_tests

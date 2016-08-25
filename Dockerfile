@@ -10,6 +10,7 @@ RUN pip install troposphere \
 
 RUN mkdir -p /usr/src/app
 
-ADD bin /usr/local/lib/camper
+
+ADD bin /usr/local/bin
 
 WORKDIR /usr/src/app

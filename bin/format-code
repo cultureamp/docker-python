@@ -9,4 +9,4 @@ echo '--- reformat code using yapf and autoflake'
 
 yapf --in-place --recursive .
 
-$script_dir/python/autoflake
+$script_dir/python-camper/autoflake
