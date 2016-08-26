@@ -1,9 +1,0 @@
-#!/usr/bin/env bash
-set -eu
-
-echo "--- remove unused imports and unused variables with autoflake"
-
-autoflake  --in-place \
-    --remove-unused-variables \
-    --remove-all-unused-imports \
-    --recursive .

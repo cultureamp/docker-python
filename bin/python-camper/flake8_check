@@ -1,8 +1,0 @@
-#!/usr/bin/env bash
-## Note: this script should be running from
-## the root of the repo
-set -eu
-
-echo "--- check python coding convention"
-
-flake8 .

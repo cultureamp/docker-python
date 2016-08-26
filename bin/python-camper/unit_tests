@@ -1,8 +1,0 @@
-#!/usr/bin/env bash
-## Note: this script should be running from
-## the root of the repo
-set -euo pipefail
-
-echo "--- run unit tests"
-# coverage:  --fail-under=MIN      Exit with a status of 2 if the total coverage is less than MIN.
-coverage run -m unittest discover test &&  coverage report

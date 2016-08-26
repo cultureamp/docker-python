@@ -5,6 +5,11 @@ set -eu
 
 script_dir=$(dirname "$0")
 
-$script_dir/python-camper/flake8_check
+echo "--- check python coding convention"
 
-$script_dir/python-camper/unit_tests
+flake8 .
+
+echo "--- run unit tests"
+# coverage:  --fail-under=MIN
+coverage run -m unittest discover test &&  coverage report
+

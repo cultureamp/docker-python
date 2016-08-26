@@ -5,4 +5,14 @@ set -eu
 
 script_dir=$(dirname "$0")
 
-$script_dir/python-camper/format_code
+echo '--- reformat code with yapf'
+
+yapf --in-place --recursive .
+
+echo "--- remove unused imports and unused variables with autoflake"
+
+autoflake  --in-place \
+    --remove-unused-variables \
+    --remove-all-unused-imports \
+    --recursive .
+
