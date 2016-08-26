@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+## Note: this script should be running from
+## the root of the repo
+set -eu
+
+script_dir=$(dirname "$0")
+
+$script_dir/python-camper/flake8_check
+
+$script_dir/python-camper/unit_tests
