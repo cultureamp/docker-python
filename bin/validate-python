@@ -3,8 +3,6 @@
 ## the root of the repo
 set -eu
 
-script_dir=$(dirname "$0")
-
 echo "--- check python coding convention"
 
 flake8 .
@@ -13,3 +11,6 @@ echo "--- run unit tests"
 # coverage:  --fail-under=MIN
 coverage run -m unittest discover tests &&  coverage report
 
+echo '--- check code formatting, such as yapf, was run prior to commit' 
+
+yapf --diff --recursive  .
