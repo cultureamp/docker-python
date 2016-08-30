@@ -11,6 +11,6 @@ echo "--- run unit tests"
 # coverage:  --fail-under=MIN
 coverage run -m unittest discover tests &&  coverage report
 
-echo '--- check code formatting, such as yapf, was run prior to commit' 
+echo '--- print the diff if source code formatting change is detected'
 
 yapf --diff --recursive  .
