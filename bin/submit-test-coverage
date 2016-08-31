@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+## Note: this script should be running from
+## the root of the repo
+set -euo pipefail
+
+echo "--- submit test coverage results to codeclimate"
+
+CODECLIMATE_REPO_TOKEN=$CODECLIMATE_REPO_TOKEN codeclimate-test-reporter
