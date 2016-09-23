@@ -8,6 +8,7 @@ MAINTAINER Cultureamp Infrastructure Services Team <is_team@cultureamp.com>
 # customisable so that users can set their own exit code. But this doesn't work yet.
 
 RUN pip install troposphere \
+                awacs \
                 pyyaml \
                 yapf==0.11.0 \
                 flake8 \
