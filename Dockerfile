@@ -13,7 +13,8 @@ RUN pip install troposphere \
                 yapf==0.11.0 \
                 flake8 \
                 autoflake \
-                codeclimate-test-reporter
+                codeclimate-test-reporter \
+                rainbow_logging_handler
 
 RUN mkdir -p /usr/src/app
 
